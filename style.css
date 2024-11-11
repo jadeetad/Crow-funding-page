@@ -1,0 +1,243 @@
+
+*{
+     box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    /* background-color: darkgrey; */
+}
+.img{
+width: 100%;
+}
+body{
+    background-color: white;
+
+    
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}/*nav container*/
+.navbar{
+    background:transparent;
+    color:white;
+    height: 40px;
+
+}
+
+ul{
+    list-style-type: none;
+}/*ul within the navbar*/
+.navbar .logo{
+    font-size: x-large;
+    font-weight: bold;
+}/*logo*/
+.navbar a{
+    color:white;
+font-size: 18px;
+font-weight: bold;
+text-decoration: none;
+}
+.navbar a:hover{
+    color: rgb(231, 129, 146);
+
+}/*color on hover*/
+.navbar .container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height:100%;
+margin-top:-400px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar li{
+    margin-left: 20px;
+}/*nav li*/
+.story{
+    background-color:whitesmoke;
+    border-radius: 20px;
+    width: 700px;
+    height: 800px;
+    margin-top: 800px;
+    margin-left: 320px;
+    position: absolute;
+    padding-left: 20px;
+padding-right: 20px;
+
+
+}
+.firstp{
+    margin-top: 25px;
+}
+.secondp{
+    margin-top: 10px;
+}
+.thirdp{
+outline-style: solid;
+border-radius:5px;
+padding-left: 20px;
+padding-top: 10px;
+margin-top: 20px;
+height: 180px;
+}
+.fourthp{
+    outline-style: solid;
+    border-radius:5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: 15px;
+    height: 180px;
+}
+.fifthp{
+    outline-style:solid;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: 15px;
+    height: 180px;
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+p {
+    color:grey;
+}
+button {
+    background-color: hsl(176, 50%, 47%);
+    color:white; 
+    border: none; /* No border */
+    padding: 8px 20px; /* Padding */
+    text-align:center;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: last baseline;
+    justify-content:flex-end;
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; 
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 20px; /* Rounded corners */
+   width: auto;
+   align-self:auto;/*align to the flex end*/
+   transition: color 0.3s ease, background-color 0.3s ease;
+}
+button:hover{
+    background-color: aquamarine;
+}
+.firstflex{
+    display: flex;
+justify-content: space-between;
+color:  hsl(176, 50%, 47%);
+padding-right: 10px;
+}
+h2{
+    color: black;
+}
+
+.storyone{
+    background-color:whitesmoke;
+    border-radius: 8px;
+    width: 700px;
+    margin-top: 330px;
+    margin-left: 320px;
+    position: absolute;
+    padding-left: 20px;
+    height:200px;
+    /* align-content: center; */
+    align-items: center;
+    padding-left: 100px;
+    /* border-bottom: grey, 30px; */
+
+}
+.storyonet{
+    background-color:whitesmoke;
+    border-radius: 20px;
+    width: 700px;
+    margin-top: 570px;
+    margin-left: 320px;
+    position: absolute;
+    padding-left: 20px;
+    height:200px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* border-bottom: grey, 30px; */
+
+}
+.twob{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 40px;
+    padding-right: 200px;
+}
+/* .storytwo{
+    background-color:whitesmoke;
+    border-radius: 20px;
+    width: 700px;
+    margin-top:700px;
+    margin-left: 320px;
+    position: absolute;
+    padding-left: 20px;
+    border-top: grey, 30px; */
+
+.secflex{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+sup{
+    color: darkgrey;
+}
+onea{
+    border-style: solid;
+    color: hsl(176, 50%, 47%);
+    
+
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 60px;
+
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right:0;
+
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.switch input {display: none;}
+slider:before{
+    position: absolute;
+    content: "";
+    height: 50px;
+    width:50px;
+    left: 5px;
+    bottom: 5px;
+    background-color: aquamarine;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+input:checked + slider{
+    background-color: blue;
+}
+input:checked + slider::before{
+    transform: translateX(50px);
+}
+.vertical-line {
+    width: 1px;             
+    height: 100px;            
+    background-color:hsl(176, 50%, 47%); 
+    margin: 0 10px;          
+}
+
